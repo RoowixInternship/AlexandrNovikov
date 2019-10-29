@@ -1,15 +1,14 @@
 
 
-.container{
+.container_mobile{
   margin: 0 auto;
   width: 100%;
   max-width: 160px;
-  border: .5px darkslategrey;
 }
 
 
 
-.h1 {
+.header__title {
   position: absolute;
   top: -3px;
   left: 9.5px;
@@ -22,9 +21,13 @@
   font-style: normal;
   line-height: 16.3px;
   letter-spacing: 0.4px;
-  text-align: top;
+  text-align: left;
   color: #000000;
 }
+
+//.h1, .h2, .h3, .h4, .h5, .h6{
+//  margin: 0 auto;
+//}
 
 .header{
   position: relative;
@@ -35,17 +38,94 @@
 
 .cake-photo{
   width: 160px;
-  height: 100.5px;
+  height: 120.5px;
   box-shadow: 0px 6px 6.6px 0.9px rgba(255, 21, 66, 0.1);
   background-color: lightgrey;
+  position: relative;
+  overflow:hidden;
+}
+
+.cake-photo img{
+  position: absolute;
+  left: -17px;
+  top: -65px;
 }
 
 .burger-button{
   position: absolute;
-  top: 2px;
+  display: block;
+  top: 9.5px;
   right: 2px;
   width: 9px;
-  height: 16px;
-  border-radius: 0.5px;
-  background-color: #000000;
+  height: 1px;
+  background-color: black;
+}
+
+.burger-button:before{
+  position: absolute;
+  display: block;
+  background-color: black;
+}
+
+.landing{
+  height: 100%;
+}
+
+
+/*Nav*/
+.nav{
+  top: -20px;
+  right: 60px;
+}
+
+.nav__items{
+  padding: 0;
+}
+
+.nav__link{
+  top: 3px;
+  font-family: PTSans, serif;
+  font-size: 6px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #383838;
+}
+
+.nav__item{
+  list-style-type: none;
+  text-transform: uppercase;
+  width: 160px;
+  height: 20px;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: #e7e7e7;
+  text-align: center;
+  border-width: 1px;
+}
+
+.h1{
+  font-family: PlayfairDisplay, serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #2d2829;
+  margin: 0;
+}
+
+.h2{
+  font-family: MarckScript, cursive;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.55;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32313d;
 }
