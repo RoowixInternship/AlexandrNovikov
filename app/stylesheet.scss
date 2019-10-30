@@ -33,7 +33,7 @@
   position: relative;
   //display: flex;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #fbebea;
 }
 
 .cake-photo{
@@ -51,20 +51,45 @@
   top: -65px;
 }
 
+.burger-container{
+  position: absolute;
+  display: block;
+  top: 6.5px;
+  right: 7px;
+  width: 9px;
+  height: 9px;
+  background: 0;
+  border-width: 0;
+}
+
 .burger-button{
   position: absolute;
   display: block;
-  top: 9.5px;
-  right: 2px;
+  top: 4px;
+  right: 1.5px;
   width: 9px;
   height: 1px;
   background-color: black;
 }
 
-.burger-button:before{
+.burger-button::before{
+  content: "";
   position: absolute;
   display: block;
   background-color: black;
+  top: -2px;
+  width: 9px;
+  height: 1px;
+}
+
+.burger-button::after{
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: black;
+  top: 2px;
+  width: 9px;
+  height: 1px;
 }
 
 .landing{
