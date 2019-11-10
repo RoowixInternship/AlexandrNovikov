@@ -1,0 +1,33 @@
+{
+  "name": "AlexandrNovikov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "sass": "node node_modules/gulp/bin/gulp.js sass",
+    "build": "node node_modules/gulp/bin/gulp.js build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoktoRDT/AlexandrNovikov.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "connect": "^3.7.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-myth": "^2.0.0",
+    "gulp-run": "^1.7.1",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.2",
+    "run-sequence": "^2.2.1"
+  }
+}

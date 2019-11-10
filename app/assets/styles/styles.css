@@ -1,0 +1,526 @@
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local('PT Sans'), local('PTSans-Regular'),
+    url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff');
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-v11-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+    url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff');
+}
+
+/* playfair-display-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+    url('../fonts/playfair-display-v15-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/playfair-display-v15-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* marck-script-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'),
+    url('../fonts/marck-script-v10-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/marck-script-v10-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.container{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1293px;
+    background-color: #fbebea;
+    font-family: "PT Sans", serif;
+    padding-left: 73px;
+}
+
+
+.container_mobile{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 160px;
+}
+
+
+
+.header__title {
+    position: absolute;
+    bottom: -14px;
+    width: 70px;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #2d2829;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    height: 80px;
+    color: #2d2829;
+}
+
+.cake-photo{
+    width: 160px;
+    height: 120.5px;
+    box-shadow: 0px 6px 6.6px 0.9px rgba(255, 21, 66, 0.1);
+    position: relative;
+    overflow:hidden;
+}
+
+.cake-photo img{
+    position: absolute;
+    left: -17px;
+    top: -65px;
+}
+
+.burger-container{
+    position: absolute;
+    display: block;
+    top: 6.5px;
+    right: 7px;
+    width: 9px;
+    height: 9px;
+    background: 0;
+    border-width: 0;
+}
+
+.burger-button{
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 1.5px;
+    width: 9px;
+    height: 1px;
+    background-color: black;
+}
+
+.burger-button::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: black;
+    top: -2px;
+    width: 9px;
+    height: 1px;
+}
+
+.burger-button::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: black;
+    top: 2px;
+    width: 9px;
+    height: 1px;
+}
+
+.landing{
+    height: 100%;
+}
+
+
+/*Nav*/
+.nav{
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+.nav__items{
+    padding: 0;
+}
+
+.nav__link{
+    top: 3px;
+    font-family: "PT Sans", serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2d2829;
+    text-decoration: none;
+    margin-left: 43px;
+}
+
+.nav__link.another{
+    color: #f50049;
+}
+
+.nav__item{
+    list-style-type: none;
+    width: 160px;
+    height: 20px;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.05);
+    background-color: #e7e7e7;
+    text-align: center;
+    border-width: 1px;
+}
+
+.phone{
+    font-size: 15px;
+    bottom: 0;
+    right: 72px;
+    position: absolute;
+    color: #2d2829;
+
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.our-cakes{
+    margin-top: -106px;
+    display: block;
+}
+
+.our-cakes__row{
+    display: flex;
+    margin-left: -22px;
+}
+
+.our-cakes__h1{
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #2d2829;
+}
+
+.our-cakes__item_big{
+    position: relative;
+    width: 695px;
+    background-color: #D6EBFE;
+    height: 652px;
+    box-shadow: 0 5px 15px 0.1px rgba(163, 6, 60, 0.1);
+    margin: 0 22px ;
+}
+
+.our-cakes__small-items{
+    display: block;
+}
+
+.our-cakes__item_small{
+    position: relative;
+    width: 483px;
+    background-color: #D6EBFE;
+    height: 304px;
+    box-shadow: 0 5px 15px 0.1px rgba(163, 6, 60, 0.1);
+    margin: 0 22px 44px 22px;
+}
+
+.our-cakes__category-name{
+    margin: 0;
+    position: absolute;
+    color: #2d2829;
+    font-size: 24px;
+    top: 32px;
+    left: 45px;
+}
+
+.our-cakes__category-children-amount{
+    position: absolute;
+    color: rgba(45, 40, 41, 0.7);
+    font-size: 20px;
+    top: 42px;
+    left: 45px;
+}
+
+.our-cakes__category-view{
+    position: absolute;
+    color: rgba(45, 40, 41, 0.7);
+    font-size: 20px;
+    bottom: 40px;
+    right: 115px;
+    text-decoration: none;
+}
+
+.our-cakes__category-arrow{
+    position: absolute;
+    bottom: 40px;
+    right: 70px;
+}
+
+.classic{
+    background-image: url("../img/classis_cakes.png");
+}
+
+.mousse{
+    background-image: url("../img/mousse_cakes.png");
+}
+
+.wedding{
+    background-image: url("../img/wedding_cakes.png");
+}
+
+.for-men{
+    background-image: url("../img/cakes_for_men.png");
+}
+
+.for-women{
+    background-image: url("../img/cakes_for_womens.png");
+}
+
+.for-children{
+    background-image: url("../img/cakes_for_children.png");
+}
+
+.main{
+    display: block;
+    color: #2d2829;
+    width: 100%;
+}
+
+.main-feature{
+    position: relative;
+    display: flex;
+}
+
+.main-feature__description{
+    display: block;
+}
+
+.main-feature__background-image{
+    margin-top: 25px;
+    margin-left: -178px;
+    width: 1179px;
+    height: 941px;
+    background-image: url("../img/main_background_cake.png");
+}
+
+.titles-block {
+    width: 100%;
+    height: 300px;
+}
+
+.h1{
+    left: 20px;
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-size: 79px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #2d2829;
+    margin-top: 147px;
+    margin-bottom: 0;
+    width: 352px;
+    line-height: 0.9;
+}
+
+.h2{
+    margin-bottom: 5px;
+    margin-top: -20px;
+    font-weight: lighter;
+    font-family: "Marck Script", cursive;
+    font-size: 41px;
+    line-height: 3.55;
+    text-align: left;
+    color: #32313d;
+}
+
+.choose-cake-button{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 26px;
+    background-color: #D30747;
+    width: 226px;
+    height: 51px;
+    border: none;
+    margin-left: -4px;
+}
+
+.advantages{
+    display: flex;
+    margin-top: 130px;
+}
+
+.advantages__item{
+    display: flex;
+}
+
+.advantages__text-left{
+    margin-left: 13px;
+    width: 80px;
+    padding-right: 72px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.leaf-img{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/leaf.png");
+    background-repeat: no-repeat;
+}
+
+.present-box-img{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/present_box.png");
+    background-repeat: no-repeat;
+}
+
+.advantages__text-right{
+    margin-left: 18px;
+    width:170px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.order-steps{
+    display: block;
+    padding-top: 17px;
+}
+
+.section__h1{
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #2d2829;
+    margin-bottom: 0;
+}
+
+.section__h2{
+    font-family: "Marck Script", cursive;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    color: #32313d;
+    margin: 9px 0 45px;
+}
+
+.order-steps__step{
+    width: 1220px;
+    height: 571px;
+    background-color: #FFFFFF;
+    margin: 0 auto 35px;
+    display: flex;
+}
+
+.order-steps__step-description{
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    color: #f50049;
+    margin: 42px 0 0 81px;
+    width: 135px;
+}
+
+.order-steps__step-number{
+    margin: 0;
+    font-size: 57px;
+}
+
+.order-steps__step-name{
+    font-size: 27px;
+    margin: 0;
+}
+
+.order-steps__filling-wrapper{
+    position: relative;
+    display: flex;
+    width: 901px;
+    height: 390px;
+    margin: 130px 0 0 -19px;
+
+}
+
+.wrapper-left-arrow{
+    width: 100px;
+    height: 100%;
+    border: none;
+    background: transparent url("../img/left_wrapper_arrow.png") no-repeat left;
+}
+
+.wrapper-right-arrow{
+    width: 100px;
+    height: 100%;
+    border: none;
+    background: transparent url("../img/righht_wrapper_arrow.png") no-repeat right;
+}
+
+.wrapper-item{
+    display: flex;
+}
+
+.wrapper-image{
+    height: 100%;
+    width: 343px;
+    background: #fbebea url("../img/chocolate_filling.png") no-repeat bottom;
+}
+
+.wrapper-item__about{
+    margin-left: 44px;
+    width: 314px;
+    height: 100%;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+
+}
+
+.wrapper-item__name{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 65px 0 0 0;
+}
+
+.wrapper-item__description{
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    color: #2f2f2f;
+}
+
+.wrapper-item__price{
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    color: #2f2f2f;
+    margin: 16px 0 0 0;
+}
+
+.wrapper-item__buy{
+    margin: 48px 0 0 0;
+    width: 180px;
+    height: 51px;
+    border-radius: 26px;
+    box-shadow: 0 5px 7px 1px rgba(255, 0, 67, 0.3);
+    background-color: #f50049;
+    border: none;
+    text-transform: uppercase;
+    color: #fefefe;
+    font-size: 13px;
+}
+
+.wrapper-item__counter{
+    font-size: 18px;
+    color: rgba(47, 47, 47, 0.7);
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+}
